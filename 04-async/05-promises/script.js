@@ -6,7 +6,7 @@ const getUser = new Promise((resolve, reject) => {
         let error = false;
 
         if (!error){
-            resolve({name: "Doorknob", motto: "I'm 150 years old"})
+            resolve({name: "Doorknob", motto: "I'm 150 years old"});
         } else {
             reject('Error: Something went wrong');
         }
@@ -16,7 +16,6 @@ const getUser = new Promise((resolve, reject) => {
 // then ==  == resolve == success
 // catch == reject == error
 // finally == regardless
-
 getUser
     .then((user) => {
         console.log(user);

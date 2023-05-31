@@ -1,0 +1,3 @@
+This is text data to get with
+fetch here's some more stuff
+and here's a third line, alright cool.

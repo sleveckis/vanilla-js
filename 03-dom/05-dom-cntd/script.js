@@ -30,6 +30,13 @@ function replaceAllItems() {
     })
 }
 
+function replaceChildHeading() {
+    const header = document.querySelector('header');
+    const h1 = document.querySelector('header h1');
+    console.log(header)
+}
+
 replaceFirstItem();
 replaceSecondItem();
 replaceAllItems();
+replaceChildHeading();
