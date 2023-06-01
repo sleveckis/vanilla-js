@@ -48,3 +48,17 @@ console.log(r.perimeter(), r.isSquare(), r.area());
  console.log(tri.getArea());
 
 /*---------------------------------------------------------------------------------------------static methods */
+// static methods must be used on the CLASS THEMSELF not the instanc(s) of a class, see below
+class House {
+    constructor(address, height, sqft){
+        this.address = address;
+        this.height = height;
+        this.sqft = sqft;
+    }
+    static getClass() {
+        return 'House';
+    }
+}
+
+const my_home = new House("123 cool guy street", 120, 2000);
+console.log(House.getClass());                                  // my_home.getClass() would result in an error!
